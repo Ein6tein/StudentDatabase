@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="row_text_color">#303030</color>
+    <color name="even_row_bg">#afcb4f4e</color>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res/com.tsi.student_database"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/row_height">
+
+    <com.tsi.student_database.custom.BorderFrameLayout
+            android:layout_width="@dimen/row_id_width"
+            android:layout_height="match_parent"
+            app:bottomBorderWidth="0dp"
+            app:leftBorderWidth="0dp"
+            app:topBorderWidth="0dp"
+            app:rightBorderWidth="1dp">
+        <TextView
+                android:id="@+id/row_id"
+                style="@style/RowTextStyle"/>
+    </com.tsi.student_database.custom.BorderFrameLayout>
+
+    <com.tsi.student_database.custom.BorderFrameLayout
+            android:layout_width="@dimen/row_names_width"
+            android:layout_height="match_parent"
+            app:bottomBorderWidth="0dp"
+            app:leftBorderWidth="0dp"
+            app:topBorderWidth="0dp"
+            app:rightBorderWidth="1dp">
+        <TextView
+                android:id="@+id/first_name"
+                style="@style/RowTextStyle"/>
+    </com.tsi.student_database.custom.BorderFrameLayout>
+
+    <com.tsi.student_database.custom.BorderFrameLayout
+            android:layout_width="@dimen/row_names_width"
+            android:layout_height="match_parent"
+            app:bottomBorderWidth="0dp"
+            app:leftBorderWidth="0dp"
+            app:topBorderWidth="0dp"
+            app:rightBorderWidth="1dp">
+        <TextView
+                android:id="@+id/last_name"
+                style="@style/RowTextStyle"/>
+    </com.tsi.student_database.custom.BorderFrameLayout>
+
+    <com.tsi.student_database.custom.BorderFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bottomBorderWidth="0dp"
+            app:leftBorderWidth="0dp"
+            app:topBorderWidth="0dp"
+            app:rightBorderWidth="1dp">
+        <TextView
+                android:id="@+id/personal_code"
+                style="@style/RowTextStyle"/>
+    </com.tsi.student_database.custom.BorderFrameLayout>
+
+
+</LinearLayout>
