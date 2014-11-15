@@ -2,6 +2,9 @@ package com.tsi.student_database;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ListView;
 import com.tsi.student_database.adapters.MainListAdapter;
 import com.tsi.student_database.models.Student;
@@ -24,5 +27,27 @@ public class MainActivity extends Activity {
             studentList.add(new Student("firstname" + i, "lastname" + i, "personalcode"));
         }
         main_list.setAdapter(new MainListAdapter(this, studentList));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_activity_actions, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_add: {
+                return true;
+            }
+            case R.id.action_search: {
+                return true;
+            }
+            default: {
+                return super.onOptionsItemSelected(item);
+            }
+        }
     }
 }
