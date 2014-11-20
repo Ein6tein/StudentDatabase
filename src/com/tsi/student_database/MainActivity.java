@@ -72,7 +72,7 @@ public class MainActivity extends Activity implements Dialog.OnClickListener {
     private AlertDialog getDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(true);
-        builder.setTitle("Set action");
+        builder.setTitle("Select action");
         LayoutInflater inflater = getLayoutInflater();
         View dialogContent = inflater.inflate(R.layout.edit_delete_dialog, null);
         builder.setView(dialogContent);
