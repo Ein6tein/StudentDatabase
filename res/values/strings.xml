@@ -6,4 +6,13 @@
     <string name="action_add">Add</string>
     <string name="action_search">Search</string>
 
+    <!-- Dialog actions-->
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <!-- Add Student action-->
+    <string name="name">Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="personal_code">Personal Code</string>
+
 </resources>

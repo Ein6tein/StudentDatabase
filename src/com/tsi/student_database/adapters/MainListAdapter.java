@@ -63,4 +63,14 @@ public class MainListAdapter extends BaseAdapter {
 
         return view;
     }
+
+    public void add(Student student) {
+        studentList.add(student);
+        notifyDataSetChanged();
+    }
+
+    public void delete(int position) {
+        studentList.remove(position);
+        notifyDataSetChanged();
+    }
 }
