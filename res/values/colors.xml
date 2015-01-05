@@ -4,5 +4,6 @@
     <color name="row_text_color">#303030</color>
     <color name="even_row_bg">#afcb4f4e</color>
     <color name="action_bar_bg">#ffe20000</color>
+    <color name="gray_text">#ff8c8c8c</color>
 
 </resources>

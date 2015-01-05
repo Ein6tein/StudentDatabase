@@ -1,52 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:layout_margin="@dimen/outside_margin">
-
-    <EditText
-            android:id="@+id/first_name_add"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/name"
-            android:layout_marginBottom="@dimen/default_margin"/>
-
-    <EditText
-            android:id="@+id/last_name_add"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/last_name"
-            android:layout_marginTop="@dimen/default_margin"
-            android:layout_marginBottom="@dimen/default_margin"/>
-
-    <EditText
-            android:id="@+id/personal_code_add"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/personal_code"
-            android:layout_marginTop="@dimen/default_margin"/>
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/parent_view">
     <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="bottom">
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/outside_margin"
+            android:animateLayoutChanges="true">
 
-        <Button
-                android:id="@+id/cancel"
-                android:layout_width="0dp"
+        <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@android:string/cancel"/>
+                android:hint="@string/name"
+                android:layout_marginBottom="@dimen/default_margin"/>
 
-        <Button
-                android:id="@+id/ok"
-                android:layout_width="0dp"
+        <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@android:string/ok"/>
+                android:hint="@string/last_name"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
 
+        <EditText
+                android:id="@+id/birth_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/birth_date"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+
+        <EditText
+                android:id="@+id/personal_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/personal_code"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        <EditText
+                android:id="@+id/student_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/student_code"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:inputType="numberDecimal"/>
+        <EditText
+                android:id="@+id/mobile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_phone"
+                android:layout_marginTop="@dimen/default_margin" 
+                android:inputType="phone"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:inputType="textEmailAddress"/>
+        <Spinner 
+                android:id="@+id/faculty"
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        <Spinner
+                android:id="@+id/programme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:visibility="gone"/>
+        <Spinner
+                android:id="@+id/level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:visibility="gone"/>
+        <EditText
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/group"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="@dimen/add_edit_divider_margin_tb"
+                android:layout_marginTop="@dimen/add_edit_divider_margin_tb"
+                android:layout_marginLeft="@dimen/add_edit_divider_margin_lr"
+                android:layout_marginRight="@dimen/add_edit_divider_margin_lr"
+                />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textSize="20sp"
+                android:paddingLeft="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+
+        <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/country"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        <EditText
+                android:id="@+id/state_or_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/state_province"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        <EditText
+                android:id="@+id/town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/city_town"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        <EditText
+                android:id="@+id/zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/zip_code"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        <EditText
+                android:id="@+id/street"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/street"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"/>
+        <EditText
+                android:id="@+id/flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/flat"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:inputType="numberDecimal"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/outside_margin">
+
+            <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@android:string/cancel"/>
+
+            <Button
+                    android:id="@+id/ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@android:string/ok"/>
+
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

@@ -5,6 +5,7 @@
     <!-- Action buttons-->
     <string name="action_add">Add</string>
     <string name="action_search">Search</string>
+    <string name="action_delete">Delete</string>
 
     <!-- Dialog actions-->
     <string name="edit">Edit</string>
@@ -13,6 +14,50 @@
     <!-- Add Student action-->
     <string name="name">Name</string>
     <string name="last_name">Last Name</string>
+    <string name="birth_date">Birth Date</string>
     <string name="personal_code">Personal Code</string>
+    <string name="student_code">Student Code</string>
+    <string name="mobile_phone">Mobile Phone (not necessary)</string>
+    <string name="email">E-mail (not necessary)</string>
+    <string name="group">Group</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="state_province">State/Province (not necessary)</string>
+    <string name="city_town">City/Town</string>
+    <string name="zip_code">Zip Postal Code</string>
+    <string name="street">Street, House number</string>
+    <string name="flat">Flat number (not necessary)</string>
 
+    <!-- Faculties, programmes-->
+    <string name="select_faculty">Please, select faculty...</string>
+    <string name="select_programme">Please, select programme...</string>
+    <string name="select_level">Please, select level...</string>
+    <string name="faculty_1">Faculty of Computer Science and Telecommunication</string>
+    <string-array name="programmes_csat">
+        <item>Computer Science</item>
+        <item>Electronics</item>
+        <item>Telecommunication</item>
+        <item>Information systems</item>
+    </string-array>
+    <string name="faculty_2">Faculty of Management and Economics</string>
+    <string-array name="programmes_mae">
+        <item>Management of transport organizations</item>
+        <item>Social Sciences in Management</item>
+        <item>Social Sciences in Economics</item>
+    </string-array>
+    <string name="faculty_3">Faculty of Transport and Logistics</string>
+    <string-array name="programmes_tal">
+        <item>Engineering science in Theoretical engineering</item>
+        <item>Transport and Business Logistics</item>
+        <item>Social Sciences in Transport and Logistics</item>
+        <item>Technical Maintenance of Aircraft Transport</item>
+        <item>Engineering science in Aviation Transport</item>
+    </string-array>
+
+    <!-- Levels-->
+    <string-array name="levels">
+        <item>Higher Professional</item>
+        <item>Bachelor</item>
+        <item>Master</item>
+    </string-array>
 </resources>

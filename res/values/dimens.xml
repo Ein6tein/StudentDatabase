@@ -11,4 +11,10 @@
     <dimen name="row_id_width">64dp</dimen>
     <dimen name="row_names_width">178dp</dimen>
     <dimen name="row_text_size">16sp</dimen>
+
+    <!-- Add/Edit activity-->
+    <dimen name="add_edit_divider_margin_tb">12dp</dimen>
+    <dimen name="add_edit_divider_margin_lr">8dp</dimen>
+    <dimen name="spinners_row_text_size">18sp</dimen>
+    <dimen name="spinners_row_text_padding">4dp</dimen>
 </resources>
